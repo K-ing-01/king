@@ -1,0 +1,62 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap"
+          rel="stylesheet">
+    <title>The King</title>
+</head>
+<body>
+<nav class="navbar">
+    <div class="navbar-left">
+        <img src="{% static 'images/king_logo.jpg' %}" alt="king_logo" class="logo-img">
+        <h1 class="site-title">The King</h1>
+    </div>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="navbar-right" id="navItems">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#">About Us</a>
+        <a class="nav-link" href="#">Profile</a>
+    </div>
+</nav>
+
+<header class="hero-section">
+    <img src="{% static 'images/୨୧ ⇢ sukuna.jpg' %}" alt="Profile Image" class="profile-img">
+    <h1 class="username">Sagar Khatri</h1>
+</header>
+
+<section class="info-cards">
+    <div class="info-card"><strong>Email:</strong> khatrisagar415@gmail.com</div>
+    <div class="info-card"><strong>Age:</strong> 23</div>
+</section>
+
+<section class="about-section">
+    <div class="about-content">
+        <p>
+            The founder of <strong>The King</strong> is not just a dreamer—he's a builder of empires. Visionary.
+            Relentless. Bold.
+            With a mind wired for innovation and a heart that beats for greatness, he turned challenges into stepping
+            stones and ideas into impact.
+        </p>
+        <p>
+            Every decision he makes echoes strength. Every step he takes carves a new path. Guided by passion,
+            backed by purpose, and driven by legacy, he’s not just building a brand—he’s building a kingdom.
+        </p>
+        <p><em>Welcome to The King—where excellence isn’t an option, it’s the standard.</em></p>
+    </div>
+</section>
+</body>
+</html>
